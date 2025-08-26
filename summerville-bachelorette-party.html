@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Having A Summerville Bachelorette Weekend!</title>
+    <!-- Use Tailwind CSS for a clean, modern look and easy customization -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS for grid and modal functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnKkLpX/fWk6y/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles to enhance the Bootstrap layout with Tailwind aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+        }
+        .container {
+            max-width: 900px;
+        }
+        .hero {
+            background-color: #f8bbd0; /* Darker pink for hero section */
+            border-radius: 1rem;
+        }
+        .section-card {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .photo-card {
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .photo-card img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+        .modal-content {
+            background-color: #fff;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="hero text-center py-12 mb-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-pink-900 mb-4">
+                Having A Summerville Bachelorette Weekend!
+            </h1>
+            <p class="text-lg text-pink-800 italic">
+                Get ready for a weekend of celebration, laughter, and unforgettable memories in the "Flowertown in the Pines."
+            </p>
+        </div>
+
+        <!-- Animated Photo Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">Something Fun for the Afternoon or Noon!</h2>
+            
+            <div class="space-y-6">
+                <!-- Photo 1 -->
+                <div class="photo-card inline-block" data-bs-toggle="modal" data-bs-target="#photoModal1">
+                    <!-- Clickable thumbnail image. Replace with your own image. -->
+                    <img src="art1.png" alt="A placeholder for a bachelorette party photo" class="rounded-xl w-full h-auto">
+                </div>
+
+            </div>
+        </div>
+
+        <!-- The Modals (Hidden by default) -->
+        <div class="modal fade" id="photoModal1" tabindex="-1" aria-labelledby="photoModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-b-0 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- Full-size image inside the modal. Replace with your own image. -->
+                        <img src="art1.png" alt="Full-size bachelorette party photo" class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Information Paragraphs Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+            <!-- Paragraph 1 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">Idea For Those Who Need Need After Brunch & Noon Fun!
+                </h3>
+                <p class="text-gray-600">
+                    Summerville bachelorette ideas for 2025. This activity is perfect for the afternoon after you've had lunch and are looking for something fun before heading out for the evening. The best part is everyone will be refreshed and ready for an exciting surprise.
+                </p>
+            </div>
+
+            <!-- Paragraph 2 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">High Energy, Low Stress</h3>
+                <p class="text-gray-600">
+                    Doing this activity in the afternoon frees up the rest of the day for your group to enjoy all that downtown Summerville has to offer. If your intention is to find a high-energy bachelorette party activity in Summerville, you've come to the right place.
+                </p>
+            </div>
+
+            <!-- Paragraph 3 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">The Best Summerville Bachelorette</h3>
+                <p class="text-gray-600">
+                    What makes a bachelorette party more fun is a little something the bride doesn't expect. A surprise activity in Summerville is a wonderful way to kick off your weekend because it's a great way to bond after a relaxing meal. It fits perfectly into that 2-3 hour window between lunch and getting ready for dinner.
+                </p>
+            </div>
+
+            <div class="space-y-6">
+                <!-- Photo 2 -->
+                <div class="photo-card inline-block" data-bs-toggle="modal" data-bs-target="#photoModal2">
+                    <!-- Clickable thumbnail image. Replace with your own image. -->
+                    <img src="art2.png" alt="A placeholder for a bachelorette party photo" class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+            <!-- Paragraph 4 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">Daytime Activities in Flowertown</h3>
+                <p class="text-gray-600">
+                    Getting this out of the way early in the day is a wonderful idea because at night everyone wants to go out in their sexy dress and high heels to a restaurant and doesn't want to be stuck in the Airbnb or rental. All the bridesmaids and the bride are full of energy, and no one is tired from a day of everything.
+                </p>
+            </div>
+
+            <!-- Paragraph 5 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">For the Adventurous Group</h3>
+                <p class="text-gray-600">
+                    An adventurous trip is the perfect way to celebrate the bride-to-be with excitement and a little surprise. These high-energy activities get everyone moving and make for incredible group photos. You can even bring the fun to your rental for an unexpected twist that keeps the energy high.
+                </p>
+            </div>
+
+            <!-- Paragraph 6 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">Simply Fun</h3>
+                <p class="text-gray-600">
+                    Another fabulous reason to book a midday activity is to free up your evening for the downtown Summerville nightlife. You have all night now to see what it has to offer since this idea is out of the way. Your Summerville bachelorette party itinerary from a local perspective is going to land you downtown anyway, which makes this the perfect thing to do.
+                </p>
+            </div>
+
+            <!-- Paragraph 7 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">Themed Celebration</h3>
+                <p class="text-gray-600">
+                    This year's theme is "Pink Paradise"! We're encouraging everyone to wear their best pink, sparkly, and glamorous outfits throughout the weekend. We'll have a few surprises to match the theme, so get ready to shine!
+                </p>
+            </div>
+
+            <!-- Paragraph 8 -->
+            <div class="section-card p-6">
+                <h3 class="text-xl font-semibold text-pink-700 mb-2">Let's Celebrate!</h3>
+                <p class="text-gray-600">
+                    Most importantly, this weekend is all about celebrating our beautiful bride-to-be. Let's make this a weekend she'll never forget, filled with love, laughter, and so many good times. We can't wait to see you all!
+                </p>
+            </div>
+            <div class="space-y-6">
+                <!-- Photo 3 -->
+                <div class="photo-card inline-block" data-bs-toggle="modal" data-bs-target="#photoModal3">
+                    <!-- Clickable thumbnail image. Replace with your own image. -->
+                    <img src="art3.png" alt="A placeholder for a bachelorette party photo" class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+
+    <div class="section-card p-6">
+        <h3 class="text-xl font-semibold text-pink-700 mb-2"></h3>
+        <p class="text-gray-600">
+            <center><a href="https://yourwebsite.com">Your Website Here</a> - </center>
+        </p>
+    </div>    
+
+     <!-- FAQ Section -->
+     <div class="section-card p-6 my-12">
+        <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Frequently Asked Questions</h2>
+        <ul class="list-unstyled space-y-4">
+            <li class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-pink-700">Is $200 for 90 minutes the only option?</h4>
+                <p class="text-gray-600 mt-1">Yes, this covers less time or more and is a flat rate.</p>
+            </li>
+            <li class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-pink-700">It's a surprise and I want this...?</h4>
+                <p class="text-gray-600 mt-1">Call and we can work out a way to keep the surprise.</p>
+            </li>
+            <li class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-pink-700">Some are on the edge or don't want to do this?</h4>
+                <p class="text-gray-600 mt-1">Since it is noon, there are lots of options for others to leave and return.</p>
+            </li>
+            <li class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-pink-700">Do you take Venmo?</h4>
+                <p class="text-gray-600 mt-1">Yes, that is an acceptable form of payment.</p>
+            </li>
+            <li class="p-4 bg-gray-50 rounded-lg shadow-sm">
+                <h4 class="font-semibold text-pink-700">My group is in another area, do you travel?</h4>
+                <p class="text-gray-600 mt-1">Yes, anywhere in the local area this can come to you.</p>
+            </li>
+        </ul>
+    </div>
+
+    
+    <!-- Footer Section -->
+    <footer class="bg-pink-900 text-white text-center py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 Bachelorette Partay. All Rights Reserved.</p>
+            <p class="mt-2 text-sm italic">Designed with love for the bride-to-be.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS for modal functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZleCps/Kk7b0f/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous"></script>
+</body>
+</html>

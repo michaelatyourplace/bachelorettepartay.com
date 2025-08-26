@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelorette Partay!</title>
+    <!-- Use Tailwind CSS for a clean, modern look and easy customization -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Bootstrap CSS for grid and modal functionality -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnKkLpX/fWk6y/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        /* Custom styles to enhance the Bootstrap layout with Tailwind aesthetics */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fce4ec; /* Light pink background */
+        }
+        .container {
+            max-width: 900px;
+        }
+        .hero {
+            background-color: #f8bbd0; /* Darker pink for hero section */
+            border-radius: 1rem;
+        }
+        .section-card {
+            background-color: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section-card:hover {
+            transform: translateY(-5px);
+        }
+        .photo-card {
+            cursor: pointer;
+            overflow: hidden;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .photo-card img {
+            transition: transform 0.5s ease-in-out;
+        }
+        .photo-card:hover img {
+            transform: scale(1.05);
+        }
+        .modal-content {
+            background-color: #fff;
+            border-radius: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <div class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <div class="hero text-center py-12 mb-12">
+            <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold text-pink-900 mb-4">
+                The Ultimate Bachelorette Partay!
+            </h1>
+            <p class="text-lg text-pink-800 italic">
+                Get ready for a weekend of celebration, laughter, and unforgettable memories.
+            </p>
+        </div>
+
+        <!-- Animated Photo Section -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">A Sneak Peek</h2>
+            
+            <div class="space-y-6">
+                <!-- Photo 1 -->
+                <div class="photo-card inline-block" data-bs-toggle="modal" data-bs-target="#photoModal1">
+                    <!-- Clickable thumbnail image. Replace with your own image. -->
+                    <img src="about.png" alt="A placeholder for a bachelorette party photo" class="rounded-xl w-full h-auto">
+                </div>
+            </div>
+        </div>
+
+        <!-- The Modals (Hidden by default) -->
+        <div class="modal fade" id="photoModal1" tabindex="-1" aria-labelledby="photoModalLabel1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-b-0 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- Full-size image inside the modal. Replace with your own image. -->
+                        <img src="https://placehold.co/800x600/f8bbd0/ffffff?text=Your+Amazing+Photo+Here" alt="Full-size bachelorette party photo" class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="photoModal2" tabindex="-1" aria-labelledby="photoModalLabel2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-b-0 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- Full-size image inside the modal. Replace with your own image. -->
+                        <img src="https://placehold.co/800x600/e0c8d8/ffffff?text=Your+Amazing+Photo+Here" alt="Full-size bachelorette party photo" class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="photoModal3" tabindex="-1" aria-labelledby="photoModalLabel3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header border-b-0 pb-0">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <!-- Full-size image inside the modal. Replace with your own image. -->
+                        <img src="https://placehold.co/800x600/d0a0b8/ffffff?text=Your+Amazing+Photo+Here" alt="Full-size bachelorette party photo" class="rounded-lg w-full h-auto">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+        <div class="section-card p-6 my-12 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6">About Our Service</h2>
+            <p class="text-gray-600 mb-4">
+                At Bachelorette Partay, we believe every bride-to-be deserves a farewell to single life that is as unique and unforgettable as she is. We specialize in creating custom-themed parties and events tailored to your group's personality and preferences. From high-energy nights out to relaxing spa days, our mission is to handle all the details so you can focus on celebrating.
+            </p>
+            <p class="text-gray-600">
+                With a passion for planning and a commitment to creating flawless events, our team works tirelessly to bring your vision to life. We pride ourselves on offering flexible packages, personalized itineraries, and seamless execution. Let us take the stress out of planning so you can make lasting memories with the people who matter most.
+            </p>
+        </div>
+
+        
+    
+    <!-- Footer Section -->
+    <footer class="bg-pink-900 text-white text-center py-8 mt-12">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2024 Bachelorette Partay. All Rights Reserved.</p>
+            <p class="mt-2 text-sm italic">Designed with love for the bride-to-be.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS for modal functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZleCps/Kk7b0f/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous"></script>
+</body>
+</html>
