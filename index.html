@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bachelorette Partay - Ultimate Bachelorette Entertainment</title>
+    <title>Bachelorette Partay - Charleston Bachelorette Entertainment</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
@@ -45,6 +45,31 @@
         .navbar-dark .navbar-toggler-icon {
             background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
         }
+        /* Custom styles for dark accordion */
+        .accordion-item {
+            background-color: #495057;
+            border: 1px solid #343a40;
+        }
+        .accordion-button {
+            background-color: #343a40;
+            color: #f8f9fa;
+            font-weight: bold;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #e91e63; /* Pink color when active */
+            color: white;
+            box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+        }
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0,0,0,.125);
+        }
+        .accordion-body {
+            background-color: #495057;
+        }
+        .accordion-button::after {
+            filter: invert(1) grayscale(100%); /* Makes the expand/collapse arrow white */
+        }
     </style>
 </head>
 <body class="bg-dark text-light">
@@ -66,37 +91,27 @@
                 <li class="nav-item">
                     <a class="nav-link" href="charleston-pub-crawls-self-guided.html">Bar crawl</a>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Locations
-                    </a>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="bachelorette-show/folly-beach-bachelorette-party.html">Folly Beach</a></li>
-                        <li><a class="dropdown-item" href="bachelorette-show/Isle-of-palms-bachelorette.html">isle of Palms</a></li>
-                        <li><a class="dropdown-item" href="bachelorette-show/mt-pleasant-bachelorette-entertainer.html">Mt. Pleasant</a></li>
-                        <li><a class="dropdown-item" href="bachelorette-show/north-charleston-bachelorette-entertainment.html">N Charleston</a></li>
-                        <li><a class="dropdown-item" href="bachelorette-show/summerville-bachelorette-party.html">Summerville</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </div>
 </nav>
 
+<div class="container-fluid p-0">
+    <img src="art2.png" class="img-fluid w-100" alt="A wide, decorative image banner for a bachelorette party service">
+</div>
 <header class="hero-section text-center">
     <div class="container">
         <h1 class="display-3 fw-bold">Make It an Unforgettable Bachelorette Partay</h1>
-        <p class="lead mt-3">The ultimate bachelorette entertainment service. We bring the fun to you!</p>
-        <a href="bachelorette-show/folly-beach-bachelorette-party.html" class="btn btn-pink btn-lg mt-4 shadow">Book Your Entertainer Now!</a>
+        <p class="lead mt-3">The ultimate bachelorette entertainment service in Charleston, SC. We bring the fun to you!</p>
+        <a href="#contact" class="btn btn-pink btn-lg mt-4 shadow">Book Your Entertainer Now!</a>
     </div>
 </header>
 
 <main class="container my-5">
     <section id="services" class="my-5">
         <div class="text-center mb-5">
-            <h2 class="display-5 fw-bold text-pink-light">What We Do</h2>
-            <h2 class="display-5 fw-bold text-pink-light">Charleston Bachelorette Show </h2>
-            <p class="lead">Professional entertainers to make your bachelorette epic.</p>
+            <h2 class="display-5 fw-bold text-pink-light">Charleston Bachelorette Show</h2>
+            <p class="lead">Professional entertainers to make your bachelorette party epic.</p>
         </div>
         <div class="row g-4">
             <div class="col-md-4">
@@ -125,15 +140,10 @@
 
     <hr class="my-5 border-secondary">
 
-    <div class="text-center mb-5">
-        <h2 class="display-5 fw-bold text-pink-light">Charleston Bachelorette Entertainment </h2>
-        <p class="lead">Bachelorette entertainers Charleston SC for high energy unleashed fun.</p>
-    </div>
-
     <section id="why-us" class="my-5">
         <div class="row align-items-center g-5">
             <div class="col-lg-6">
-                <img src="art2.png" class="img-fluid rounded-3 shadow-lg" alt="Bachelorette party group having fun">
+                <img src="art1.png" class="img-fluid rounded-3 shadow-lg" alt="Bachelorette party group having fun">
             </div>
             <div class="col-lg-6">
                 <h2 class="display-5 fw-bold text-pink-light mb-4">Why Bachelorette Partay?</h2>
@@ -142,7 +152,7 @@
                         <i class="fas fa-money-bill-wave fa-2x text-pink-light me-3"></i>
                         <div>
                             <h4 class="h5 fw-bold">Affordable Fun</h4>
-                            <p>For just a flat rate of $200, you get 90 minutes of entertainment. It's a fantastic value that's easy to split with the group. The fun is with a Charleston male entertainer, that does vegas style high energy shows at your show.</p>
+                            <p>For just a flat rate of $200, you get 90 minutes of high-energy, Vegas-style entertainment. It's fantastic value that's easy to split with the group.</p>
                         </div>
                     </li>
                     <li class="d-flex align-items-start mb-3">
@@ -166,17 +176,132 @@
 
     <hr class="my-5 border-secondary">
 
+    <section id="charleston-area-fun" class="my-5">
+        <div class="section-card">
+            <div class="text-center mb-4">
+                <h2 class="display-5 fw-bold text-pink-light">The Ultimate Surprise for the Adventurous Bride</h2>
+                <p class="lead">Unleash high-energy fun right at your rental, no matter where you are in the Lowcountry!</p>
+            </div>
+            <p>Whether your bachelorette weekend is in a Mt. Pleasant rental or a Folly Beach house, a daytime male entertainer is the ultimate surprise. Plan the show for around noon, right after brunch when everyone is sober, energized, and ready for fun. It's the perfect 2-3 hour window of excitement that adds an adventurous twist to the day without derailing your evening plans. Getting the party started early means your nights are still free for hitting the town in your sexy dresses and high heels.</p>
+            <p>This is the bachelorette activity she won't see coming—the one the bridesmaids secretly agree on to make the weekend truly legendary. For an affordable flat rate of $200 for a 90-minute show, it’s an easy cost to split. Plus, the daytime slot offers total flexibility. If some members of your group want to skip the show, they can easily head out for shopping or beach time while the rest of the party enjoys the entertainment!</p>
+        </div>
+    </section>
+
+    <hr class="my-5 border-secondary">
+
+    <section id="gallery-preview" class="my-5">
+        <div class="row g-4">
+            <div class="col-md-6">
+                <img src="enter2.jpeg" class="img-fluid rounded-3 shadow-lg" alt="Placeholder image for bachelorette show">
+            </div>
+            <div class="col-md-6">
+                <img src="enter1.jpeg" class="img-fluid rounded-3 shadow-lg" alt="Placeholder image for bachelorette party memories">
+            </div>
+        </div>
+    </section>
+
+    <hr class="my-5 border-secondary">
+
+    <section id="faq" class="my-5">
+        <div class="section-card">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-pink-light">Frequently Asked Questions</h2>
+            </div>
+            <div class="accordion accordion-flush" id="faqAccordion">
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Is $200 for 90 minutes the only option?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, this is a flat rate that covers performances up to 90 minutes. Whether you need a shorter show or the full time, the price remains the same simple, affordable rate.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            How do we keep this a surprise for the bride?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            We are experts at surprises! Give us a call, and we can coordinate directly with the maid of honor to plan the perfect reveal, ensuring the bride has no idea what's coming.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What if some guests don't want to participate?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            That's the beauty of a daytime show! Since it's around noon, anyone who isn't interested has plenty of options to leave for a bit to go shopping, hit the beach, or relax elsewhere before returning.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item mb-2">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Do you take Venmo?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Yes, Venmo is an acceptable and convenient form of payment. We also accept other common payment methods.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            My group is in another area, do you travel?
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Absolutely. We service the entire Charleston Lowcountry area. Whether you're in Summerville, Isle of Palms, or another local spot, we bring the party directly to your rental location.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="my-5 border-secondary">
+
     <section id="contact" class="my-5 text-center">
         <h2 class="display-5 fw-bold text-pink-light mb-4">Ready to Book?</h2>
-        <p class="lead mb-4">Let's make this bachelorette party unforgettable. Contact us today to secure your date. A male enterainer for bachelorette is one step away!</p>
-        <a href="bachelorette-show/Isle-of-palms-bachelorette.html" class="btn btn-pink btn-lg shadow">Get a Quote Now!</a>
+        <p class="lead mb-4">Let's make this bachelorette party unforgettable. Contact us today to secure your date. A male entertainer for your bachelorette is one step away!</p>
+        <a href="mailto:your-email@example.com?subject=Bachelorette Partay Quote Request" class="btn btn-pink btn-lg shadow">Get a Quote Now!</a>
     </section>
 </main>
 
-<footer class="footer text-center text-secondary">
+<footer class="footer bg-dark text-secondary pt-5 pb-4">
     <div class="container">
-        <p>&copy; 2025 Bachelorette Partay. All Rights Reserved.</p>
-        <p class="mb-0"><a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></p>
+        <div class="row">
+            <div class="col-md-6 mb-4">
+                <h5 class="text-white mb-3">Bachelorette Partay</h5>
+                <p>Your guide to the ultimate bachelorette party experience in Charleston and the surrounding Lowcountry.</p>
+            </div>
+            <div class="col-md-6 mb-4">
+                <h5 class="text-white mb-3">Our Service Areas</h5>
+                <p>We are proud to offer our bachelorette party services in the following locations:</p>
+                <p class="lead" style="line-height: 1.5;">
+                    Folly Beach • Isle of Palms <br>
+                    Mt. Pleasant • North Charleston <br>
+                    Summerville
+                </p>
+            </div>
+        </div>
+        <hr style="color: #6c757d;">
+        <div class="text-center pt-2">
+            <p>&copy; 2025 Bachelorette Partay. All Rights Reserved. | <a href="#" class="text-secondary text-decoration-none">Privacy Policy</a></p>
+        </div>
     </div>
 </footer>
 
