@@ -1,248 +1,462 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Charleston Bachelorette List"
-    <title>Charleston Bachelorette List </title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #000000;
-            color: #ffffff;
-        }
-        
-        .hero-section {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 5rem 0;
-        }
-        
-        .content-card {
-            background-color: #1a1a1a;
-            border: 1px solid #333;
-            transition: transform 0.3s;
-        }
-        
-        .content-card:hover {
-            transform: translateY(-5px);
-            border-color: #667eea;
-        }
-        
-        .section-title {
-            color: #667eea;
-            font-weight: bold;
-        }
-        
-        .service-section {
-            background-color: #1a1a1a;
-            border: 2px solid #667eea;
-            padding: 3rem;
-            border-radius: 10px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Complete Charleston bachelorette party guide with the best places to dance, drink, eat, stay, and party. Plan the ultimate girls weekend in Charleston, SC." />
+  <title>Charleston Bachelorette Party Guide | Best Bars, Restaurants & Activities</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    .hero-section {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=1200') center/cover;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+    .card {
+      transition: transform 0.3s;
+      height: 100%;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    }
+    .section-title {
+      position: relative;
+      padding-bottom: 15px;
+      margin-bottom: 30px;
+    }
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 3px;
+      background: #dc3545;
+    }
+    .cta-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+    }
+    .cta-card h5, .cta-card p {
+      color: white;
+    }
+  </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <!-- Hero Section -->
+  <section class="hero-section text-center">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="#">Bachelorette Partay</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="charleston-pub-crawls-self-guided.html">Bar crawl</a>
-                </li>
-            </ul>
-        </div>
+      <h1 class="display-4 fw-bold mb-3">Charleston Bachelorette Party Guide</h1>
+      <p class="lead">Your Complete Checklist for the Ultimate Girls Weekend in Charleston, SC</p>
+      <p>Southern charm meets unforgettable nights out</p>
     </div>
-</nav>
+  </section>
 
-     <!-- Hero Section -->
-     <section class="hero-section text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <!-- Add your gif URL here -->
-                    <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNm45YmJzZmFrcDE5eDh1bHozZDI5ZmUycWEyNWNiOGh2cnhqZWNoMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/fByUfnzgcluB9isbpX/giphy.gif" 
-                         alt="Charleston Bachelorette" 
-                         class="img-fluid mb-4 rounded" 
-                         style="max-width: 400px;">
-                    
-                    <h1 class="display-6 mb-4">Charleston Bachelorette List</h1>
-                    <p class="lead fs-5">Charleston bachelorette checklist for the next season. The Perfect Blog for Future Parties & Girls Trips</p>
-                </div>
-            </div>
+  <!-- Introduction -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <p class="lead text-center">
+            Charleston is the ultimate girls trip destination, combining Southern charm, stunning beaches, award-winning restaurants, and a vibrant nightlife scene. Whether you're planning a bachelorette party, celebrating a milestone birthday, or organizing a girls' weekend escape, Charleston delivers the perfect mix of relaxation and excitement.
+          </p>
+          <p class="text-center text-muted">
+            From historic downtown streets lined with pastel-colored houses to rooftop bars with harbor views, Charleston offers something for every type of celebration. The walkable downtown means you can bar crawl, shop, and dine without needing a car. Plus, beautiful beaches are just 15-20 minutes away when you need that beach day vibe.
+          </p>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
+  <!-- Where to Dance & Drink -->
+  <section class="py-5 bg-light">
+    <div class="container">
+       
                     
-                    <!-- Introduction -->
-                    <div class="mb-5">
-                        <h2 class="section-title display-7 mb-4">Why Charleston is Perfect for Your Trip</h2>
-                        <p class="lead">The ultimate girls trip destination, combining Southern charm, stunning beaches, great dining, and a vibrant nightlife scene. Whether you're planning a bachelorette party, celebrating a milestone birthday, or just need a weekend escape with your best friends, the city delivers the perfect mix of relaxation and excitement.</p>
-                        
-                        <p class="fs-5">From historic downtown streets lined with pastel-colored houses to rooftop bars with harbor views, the city offers something for every type of girls trip. The walkable downtown means you can bar crawl, shop, and dine without needing a car. Plus, beautiful beaches are just 15-20 minutes away per the time of day when you need that beach day vibe.</p>
-                    </div>
-
-                    <!-- What Makes Charleston Special -->
-                    <h4 class="section-title mb-4">Special City For A Trips</h4>
-                    
-                    <div class="row g-4 mb-5">
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">🎉 Party Central</h5>
-                                    <p class="card-text">One of the South's top party destinations. King Street transforms into a parade every weekend with groups in matching outfits, sashes, and tiaras taking over bars and restaurants.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">🍹 Incredible Nightlife</h5>
-                                    <p class="card-text">Rooftop bars, dance clubs, cocktail lounges, and dive bars nightlife caters to every vibe. Most venues are within walking distance on King Street, making bar hopping safe and easy.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">🏖️ Beach Access</h5>
-                                    <p class="card-text">Folly Beach, Sullivan's Island, and Isle of Palms offer beautiful beaches perfect for day trips. Rent a beach house or spend the day soaking up sun before heading back downtown for nightlife.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">🍽️ Food Scene</h5>
-                                    <p class="card-text">Award-winning restaurants, bottomless brunch spots, and Instagram-worthy cafes make foodie paradise. Perfect for long boozy brunches and memorable group dinners.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">📸 Instagram-Worthy</h5>
-                                    <p class="card-text">Rainbow Row, historic streets, rooftop views, and picturesque beaches provide endless photo opportunities. Your camera roll will thank you.</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="card content-card">
-                                <div class="card-body text-light">
-                                    <h5 class="card-title text-info">🛍️ Shopping</h5>
-                                    <p class="card-text">King Street's shopping district features boutiques, chain stores, and local shops perfect for finding that perfect outfit or souvenir from your girls trip.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                <div class="col-lg-8 mx-auto">
-                    <div class="card content-card">
-                        <div class="card-body text-light">
-                        <h5 class="mb-4 text-info">Like List - Than Here</h5>
-                        <div class="card shadow-sm">
-                            <div class="card-body fs-4 bg-black text-light">
-                                <ol class="mb-0">
-                                    <li>Bottomless brunch on King Street</li>
-                                    <li>Rooftop bar hopping</li>
-                                    <li>Beach day at Folly Beach</li>
-                                    <li>Photo shoot at Rainbow Row</li>
-                                    <li>Spa day and massages</li>
-                                    <li>Dance at Uptown Social</li>
-                                    <li>Private boat tour of Harbor</li>
-                                    <li>Shopping on King Street</li>
-                                    <li>Sunset at The Battery</li>
-                                    <li>Group dinner at upscale restaurant</li>
-                                    <li>Visit Sullivan's Island beach</li>
-                                    <li>Bar crawl downtown</li>
-                                    <li>Explore the City Market</li>
-                                    <li>Cocktails at Republic Garden & Lounge</li>
-                                    <li>Historic walking tour</li>
-                                    <li>Rent a party house with a pool</li>
-                                    <li>Shem Creek waterfront dining</li>
-                                    <li>Dance at Trio Nightclub</li>
-                                    <li>Carriage ride through historic district</li>
-                                    <li>Afternoon at a wine bar</li>
-                                    <li>Visit Pineapple Fountain at Waterfront Park</li>
-                                    <li>Rent bikes and explore downtown</li>
-                                    <li>Late night pizza on King Street</li>
-                                    <li>Boozy brunch cruise</li>
-                                    <li>Hire private entertainment for your group</li>
-                                </ol>
-                            </div>
-                        </div>
-                        </div>
-                    </div>
-                </div><br>
-                    <!-- Pro Tips -->
-                    <h5 class="section-title mb-4">Pro Tips for Girls Trips</h5>
-                    <div class="row g-3 mb-5">
-                       
-                        <div class="col-12">
-                            <div class="alert alert-dark border border-secondary">
-                                <strong>💡 Make Reservations:</strong> Local restaurants book up fast
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="alert alert-dark border border-secondary">
-                                <strong>💡 Plan Transportation:</strong> Downtown is walkable, but you'll need Uber/Lyft for beaches
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="alert alert-dark border border-secondary">
-                                <strong>💡 Coordinate Outfits:</strong> Matching outfits are a staple embrace it!
-                            </div>
-                        </div>
-                    </div>
-
-                    <section id="contact" class="my-5 text-center">
-                        <h5 class="display-5 fw-bold text-pink-light mb-4">Book A Dancer?</h5>
-                        <div class="container-fluid p-0">
-                            <a href="https://michaelchs.blog"><img src="partay2.png" class="img-fluid w-100" alt="Party Guide"></a> 
-                        </div>
-                        <p class="lead mb-4">Ready to lock in one of the best party activities? Let's make this experience unforgettable. Click the photo</p>
-                        <p> <a href="/male-entertainer/index.html">Learn More About Michael</a> is one of the best dancers in the area! </p>
-                    </section>
-
-                </div>
+      <h2 class="text-center fw-bold section-title">Where to Dance & Drink in Charleston</h2>
+      <p class="text-center text-muted mb-5">Charleston's nightlife scene on King Street caters to every vibe — from rooftop cocktails to late-night dance floors</p>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Rooftop Bars</h5>
+              <p class="card-text">The Rooftop at The Vendue offers stunning harbor views and craft cocktails. Stars Rooftop & Grill Room provides downtown skyline views perfect for sunset drinks. Pavilion Bar at Market Pavilion Hotel delivers upscale atmosphere with Charleston's best rooftop experience.</p>
+              <span class="badge bg-primary">Cocktails</span>
+              <span class="badge bg-info">Views</span>
             </div>
+          </div>
         </div>
-    </section>
 
-    
-
-    <!-- Footer -->
-    <footer class="py-4 mt-5 border-top border-secondary">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0 text-muted">Charleston CheckList For Bachelorettes</p>
-                </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Dance Clubs</h5>
+              <p class="card-text">Mynt is Charleston's premier nightclub with DJ sets and dance floors perfect for groups. Republic Garden & Lounge combines Latin vibes with bottle service. Trio Club offers three floors of different music experiences all in one venue.</p>
+              <span class="badge bg-danger">Dancing</span>
+              <span class="badge bg-warning text-dark">Late Night</span>
             </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">King Street Bars</h5>
+              <p class="card-text">Bay Street Biergarten provides outdoor beer garden vibes. Prohibition offers craft cocktails in a speakeasy setting. The Commodore serves tiki drinks and casual beach bar atmosphere. All within walking distance for the perfect bar crawl.</p>
+              <span class="badge bg-success">Bar Crawl</span>
+              <span class="badge bg-secondary">Groups</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Live Music Venues</h5>
+              <p class="card-text">Charleston Music Hall hosts live bands and comedy shows. The Windjammer on Isle of Palms delivers beachfront live music. Pour House features local and touring bands in a laid-back dive bar setting perfect for dancing.</p>
+              <span class="badge bg-dark">Live Music</span>
+              <span class="badge bg-info">Entertainment</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Karaoke & Piano Bars</h5>
+              <p class="card-text">Burns Alley Tavern features dueling piano shows perfect for singing along. Kaminsky's Dessert Cafe offers late-night karaoke with desserts. These interactive spots guarantee memorable group moments and hilarious performances.</p>
+              <span class="badge bg-primary">Karaoke</span>
+              <span class="badge bg-warning text-dark">Interactive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Brewery & Wine Bar Scene</h5>
+              <p class="card-text">Edmund's Oast Brewing Co. offers craft beer flights and food. Charleston Wine Cellars provides wine tastings downtown. Holy City Brewing features outdoor seating and local Charleston brews perfect for afternoon drinking sessions.</p>
+              <span class="badge bg-success">Craft Beer</span>
+              <span class="badge bg-danger">Wine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Things to Do -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title">Things to Do in Charleston</h2>
+      <p class="text-center text-muted mb-5">Beyond the bars — Charleston offers unique activities perfect for your bachelorette itinerary</p>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🏖️ Beach Days</h5>
+              <p class="card-text">Folly Beach offers a laid-back surfer vibe with beach bars and rental shops. Sullivan's Island provides quieter stretches perfect for relaxing. Isle of Palms features family-friendly atmosphere with plenty of beach amenities and restaurants.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🛥️ Boat Tours & Water Activities</h5>
+              <p class="card-text">Charleston Harbor boat tours showcase the city from the water. Sunset cruises with cocktails create Instagram-worthy moments. Kayak tours through marshlands, paddleboarding, and party pontoon boat rentals available for adventurous groups.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🛍️ Shopping on King Street</h5>
+              <p class="card-text">Upper King Street boutiques offer trendy fashion finds. Lower King Street features high-end shops and local designers. Pick up matching bachelorette party outfits, gifts for the bride, and Charleston souvenirs during your shopping spree.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🧖‍♀️ Spa & Wellness</h5>
+              <p class="card-text">Charleston Day Spa offers group packages and champagne. Earthling Day Spa provides organic treatments downtown. Spa at Belmond Charleston Place delivers luxury experiences. Perfect for recovering from last night's festivities.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">📸 Instagram Photo Spots</h5>
+              <p class="card-text">Rainbow Row's colorful historic houses are Charleston's most photographed location. Pineapple Fountain in Waterfront Park, The Battery's waterfront views, and Angel Oak Tree provide stunning backdrops for your bachelorette photos.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">🎨 Unique Experiences</h5>
+              <p class="card-text">Paint and sip classes with wine at Bottle + Bottega. Ghost tours through Charleston's haunted historic district. Charleston Culinary Tours combine food tastings with history. Cooking classes at Charleston Cooks teach Lowcountry cuisine.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where to Eat -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title">Where to Eat in Charleston</h2>
+      <p class="text-center text-muted mb-5">Award-winning restaurants and bottomless brunch spots make Charleston a foodie paradise</p>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Bottomless Brunch Spots</h5>
+              <p class="card-text">Cru Cafe offers unlimited mimosas with Southern-inspired brunch. The Darling Oyster Bar serves coastal brunch with bottomless cocktails. Pearlz Oyster Bar provides waterfront views with unlimited drinks. Perfect for recovering and starting your day right.</p>
+              <span class="badge bg-warning text-dark">Brunch</span>
+              <span class="badge bg-info">Mimosas</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Upscale Dining</h5>
+              <p class="card-text">Husk features elevated Southern cuisine in a historic setting. FIG (Food Is Good) serves seasonal farm-to-table dishes. The Ordinary specializes in seafood towers and raw bar. Halls Chophouse provides premium steaks for a celebratory dinner.</p>
+              <span class="badge bg-danger">Fine Dining</span>
+              <span class="badge bg-dark">Reservations Required</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Casual Group-Friendly Eats</h5>
+              <p class="card-text">Taco Boy delivers beach vibes with margaritas downtown. Sesame Burgers & Beer offers craft burgers and local brews. Swig & Swine serves Carolina BBQ. Lewis Barbecue features Texas-style BBQ. All perfect for casual group dining.</p>
+              <span class="badge bg-success">Casual</span>
+              <span class="badge bg-primary">Groups</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Rooftop Dining</h5>
+              <p class="card-text">The Rooftop at The Vendue combines harbor views with New American cuisine. Pavilion Bar offers upscale rooftop dining and cocktails. Vintage Lounge provides downtown skyline views with tapas. Sunset dining with your crew creates unforgettable moments.</p>
+              <span class="badge bg-info">Views</span>
+              <span class="badge bg-warning text-dark">Cocktails</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Seafood & Lowcountry Classics</h5>
+              <p class="card-text">167 Raw serves oysters and fresh catches. Fleet Landing offers waterfront seafood dining. Hannibal's Kitchen provides soul food and Lowcountry classics. Bowens Island Restaurant features rustic oyster roasts in a historic setting.</p>
+              <span class="badge bg-primary">Seafood</span>
+              <span class="badge bg-success">Local</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Late Night Food</h5>
+              <p class="card-text">Jack's Cosmic Dogs serves late-night hot dogs after bar hopping. Fuel serves pizza until 2am. Closed For Business offers upscale late-night dining. Perfectly located on King Street for post-club munchies and group bonding over comfort food.</p>
+              <span class="badge bg-dark">Late Night</span>
+              <span class="badge bg-danger">Comfort Food</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where to Stay -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title">Where to Stay in Charleston</h2>
+      <p class="text-center text-muted mb-5">From downtown hotels to beach house rentals — find the perfect home base for your bachelorette weekend</p>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Downtown Hotels</h5>
+              <p class="card-text">The Dewberry offers boutique luxury in the heart of downtown. Hotel Bennett provides upscale accommodations with rooftop bar. Zero George features intimate historic charm. Staying downtown puts you walking distance from King Street nightlife and restaurants.</p>
+              <span class="badge bg-primary">Downtown</span>
+              <span class="badge bg-warning text-dark">Walkable</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Beach House Rentals</h5>
+              <p class="card-text">Isle of Palms vacation rentals offer private beach access and pools. Folly Beach houses provide laid-back coastal vibes. Sullivan's Island rentals deliver quiet luxury. Perfect for groups wanting space, kitchens, and beachfront lifestyle during your stay.</p>
+              <span class="badge bg-info">Beach</span>
+              <span class="badge bg-success">Private</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Airbnb & VRBO Options</h5>
+              <p class="card-text">Downtown Charleston Airbnbs put you in historic neighborhoods with character. Mount Pleasant vacation rentals offer suburban comfort near beaches. Full homes with multiple bedrooms, shared spaces, and kitchens perfect for bachelorette groups and private parties.</p>
+              <span class="badge bg-danger">Groups</span>
+              <span class="badge bg-dark">Kitchen</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Budget-Friendly Hotels</h5>
+              <p class="card-text">NotSo Hostel offers affordable dorm and private rooms downtown. Hampton Inn Historic District provides reliable accommodations. Holiday Inn Charleston Riverview overlooks the water. Great options for groups watching budgets while staying centrally located.</p>
+              <span class="badge bg-success">Budget</span>
+              <span class="badge bg-primary">Central</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Luxury Resort Options</h5>
+              <p class="card-text">Wild Dunes Resort on Isle of Palms features golf, spa, and beach access. The Sanctuary at Kiawah Island offers championship golf and oceanfront luxury. Perfect for groups wanting resort amenities combined with Charleston exploration.</p>
+              <span class="badge bg-warning text-dark">Luxury</span>
+              <span class="badge bg-info">Resort</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Historic B&Bs</h5>
+              <p class="card-text">Zero George Street combines historic charm with modern luxury. The Wentworth Mansion offers Victorian elegance. Vendue Inn features rooftop bar and art gallery. Smaller intimate properties perfect for groups wanting Charleston authenticity and character.</p>
+              <span class="badge bg-dark">Historic</span>
+              <span class="badge bg-danger">Boutique</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Stay-In Parties Are the Best -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center fw-bold section-title">Why Stay-In Bachelorette Parties Create the Best Memories</h2>
+      <p class="text-center text-muted mb-5">Sometimes the most unforgettable nights happen at home — here's why private entertainment wins</p>
+      
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">🏡 Complete Privacy & Comfort</h5>
+              <p class="card-text">No crowded bars, no strangers, no judgment — just your closest friends in a private space. Control the music, the vibe, and the timeline. Everyone can relax in comfortable clothes, no heels required. The bride gets undivided attention without competing with other groups or patrons.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">💰 Better Value for Your Money</h5>
+              <p class="card-text">Skip expensive drink minimums, cover charges, and inflated club prices. No tipping multiple performers or dealing with aggressive upselling. One flat rate for professional private entertainment delivers more bang for your buck. Plus, you can BYOB and save even more money.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">🎭 Personalized Entertainment Experience</h5>
+              <p class="card-text">Private male entertainers customize shows specifically for your group's energy and preferences. The bride becomes the star of a personalized performance. No generic club routine — everything is tailored to your party's vibe and comfort level for maximum fun.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">✨ Stress-Free Planning</h5>
+              <p class="card-text">No coordinating transportation for drunk friends. No worrying about who's getting home safely. No dealing with bouncers, dress codes, or club politics. Everyone's already where they need to be, and the party comes to you on your schedule.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">📱 Photo & Video Freedom</h5>
+              <p class="card-text">Capture every hilarious moment without club restrictions on phones and cameras. Create content for social media without strangers photobombing. Document the bride's reactions in perfect lighting. These candid memories become legendary stories your group tells for years.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+          <div class="card cta-card">
+            <div class="card-body">
+              <h5 class="card-title">🎉 The Party Continues After</h5>
+              <p class="card-text">When the show ends, the party doesn't have to stop. Continue with games, music, and bonding in your space. No last call, no closing time, no rush to leave. The night naturally flows at your group's pace, creating organic unforgettable moments together.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CTA for Michael -->
+      <div class="row mt-5">
+        <div class="col-lg-8 mx-auto">
+          <div class="card border-0 shadow-lg">
+            <div class="card-body text-center p-5">
+              <h3 class="fw-bold mb-3">Book Charleston's Most Requested Private Entertainer</h3>
+              <p class="lead mb-4">
+                Michael brings professional male entertainment directly to your Charleston vacation rental, Airbnb, or beach house. Verified reviews, years of experience, and customized performances make him Mount Pleasant and Charleston's top choice for bachelorette parties.
+              </p>
+              <a href="/male-entertainer/index.html" class="btn btn-danger btn-lg">Learn More About Michael</a>
+              <p class="text-muted mt-3 mb-0">Serving Charleston, Mount Pleasant, Isle of Palms, Sullivan's Island, and Folly Beach</p>
+              <img src="partay2.png" style="height: 400px; width: 500px;" class="img-fluid">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <div class="container">
+      <p class="mb-2">&copy; 2025 Charleston Bachelorette Party Guide</p>
+      <p class="text-muted small">Your ultimate resource for planning unforgettable girls weekends in Charleston, SC</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
