@@ -7,7 +7,7 @@
     <!-- Use Tailwind CSS for a clean, modern look and easy customization -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Bootstrap CSS for grid and modal functionality -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" xintegrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnKkLpX/fWk6y/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <style>
@@ -30,6 +30,20 @@
         }
         .card-row {
             margin-bottom: 1.5rem;
+        }
+        .venue-card {
+            background-color: #fff9fb;
+            border-left: 4px solid #f06292;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 0.5rem;
+        }
+        .pro-tip {
+            background-color: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 0.5rem;
         }
     </style>
 </head>
@@ -90,6 +104,10 @@
             <p class="text-gray-600">
                 The same places your guide or crawler offers with all the packages and perks... you will end up at anyway. Charleston is small, every popular place is on everyone's guide, tour, and so on. Plus, when you're walking down King Street, you are not going to miss these places.
             </p>
+            <div class="pro-tip mt-4">
+                <p class="text-gray-800 mb-2"><i class="fa-solid fa-lightbulb text-yellow-600"></i> <strong>Money-Saving Tip:</strong></p>
+                <p class="text-gray-700 text-sm">Self-guided crawls can save you $30-50 per person compared to organized tours. Use that money for drinks, food, or a nice brunch the next day!</p>
+            </div>
         </div>
 
         <!-- Self-Guided Pub Crawl List -->
@@ -101,7 +119,10 @@
             <p class="text-gray-600 mb-4">
                 I am going to include a self-guided pub crawl guide for those who want to save money, make it affordable, pick their own path, try something different, and list places that may not be on the partnership list that you might miss out on. It is not a hidden path guide; these places can't be missed.
             </p>
-            
+            <div class="pro-tip">
+                <p class="text-gray-800 mb-2"><i class="fa-solid fa-clock text-yellow-600"></i> <strong>Best Times to Start:</strong></p>
+                <p class="text-gray-700 text-sm">Begin your crawl around 8-9 PM on Friday or Saturday. Earlier means shorter lines but less energy; later means peak crowds and atmosphere. Most venues stay open until 2 AM.</p>
+            </div>
         </div>
 
         <!-- The King Street Walk -->
@@ -112,13 +133,15 @@
             </p>
             <ul class="list-disc list-inside text-gray-600 ml-4 space-y-1">
                 <li>Uptown Social</li>
-                <li>Ink</li>
                 <li>Prohibition</li>
                 <li>Club Republic</li>
                 <li>Side Street Ann - Dudleys, The Music Farm, Bodega</li>
                 <li>Ritual Rooftop bar</li>
                 <li>Frontier Lounge</li>
             </ul>
+            <div class="mt-4 p-4 bg-blue-50 rounded-lg border-l-4 border-blue-400">
+                <p class="text-gray-700 text-sm"><i class="fa-solid fa-map-location-dot text-blue-600"></i> <strong>Walking Distance:</strong> The entire route is approximately 1.2 miles and takes 20-25 minutes of straight walking. With stops at each venue, plan for 4-5 hours total.</p>
+            </div>
         </div>
 
         <!-- Charleston Pub Crawl Itinerary -->
@@ -136,9 +159,17 @@
             <p class="text-gray-600 mb-4">
                 This is one of the only places you will be standing in line at per the event. They always have events going, live music, and offer a great time with younger crowds.
             </p>
-            <p class="text-gray-600">
+            <p class="text-gray-600 mb-4">
                 A lot of pub crawls offer you the VIP treatment to get into a bar first without waiting in a line but, this is the only place that really has a line and probably a must-stop.
             </p>
+
+            <!-- Uptown Social Details -->
+            <div class="venue-card">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-music"></i> Stop 1: Uptown Social</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>What to Expect:</strong> High-energy dance floor with live DJs or bands most nights. Dress code enforced - no athletic wear or flip flops.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Cover Charge:</strong> Typically $5-10 depending on the night and performer.</p>
+                <p class="text-gray-600 text-sm"><strong>Vibe:</strong> Young professional crowd (21-35), loud music, packed dance floor. Perfect for kicking off the night with energy.</p>
+            </div>
         </div>
 
         <!-- Charleston SC King Street bar crawling at its best -->
@@ -147,29 +178,86 @@
             <p class="text-gray-600 mb-4">
                 After you leave Uptown Social the next well-positioned place to go is Prohibition, it offers a Jazz Age feel vibe and has great reviews. That alone is enough to pay them a visit on your trip. While there, you may encounter some great live music and the food is amazing as well.
             </p>
-            <p class="text-gray-600 mb-4">
+
+            <!-- Prohibition Details -->
+            <div class="venue-card">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-martini-glass-citrus"></i> Stop 2: Prohibition</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>What to Expect:</strong> Speakeasy-themed bar with craft cocktails and 1920s atmosphere. Lower lighting, intimate seating areas.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Signature Drinks:</strong> Try their prohibition-era cocktails - the bartenders know their craft.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Food:</strong> Small plates and shareables available. Great for a bite between drinks.</p>
+                <p class="text-gray-600 text-sm"><strong>Vibe:</strong> More sophisticated and conversation-friendly than Uptown. Good place to regroup and plan the rest of your night.</p>
+            </div>
+
+            <p class="text-gray-600 mb-4 mt-6">
                 The next place is the walk is Club Republic, it is a happening party spot. Every guided tour and non-guided ends up here and gets a picture taken in front of the "You Are Beautiful" lighting they have in the backdrop. It is another Hot Spot and a must-stop.
             </p>
-            <p class="text-gray-600">
+
+            <!-- Club Republic Details -->
+            <div class="venue-card">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-camera"></i> Stop 3: Club Republic</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>What to Expect:</strong> Multi-level nightclub with different music on each floor. The famous "You Are Beautiful" neon sign is a must-get photo op.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Music:</strong> Top 40, hip-hop, and electronic dance music depending on the floor and night.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Dress Code:</strong> Upscale casual to club wear. No athletic gear.</p>
+                <p class="text-gray-600 text-sm"><strong>Vibe:</strong> Peak party energy, diverse crowd, Instagram-worthy moments. This is where your night peaks!</p>
+            </div>
+
+            <p class="text-gray-600 mt-6">
                 I will make a quick mention of Ann Street which is on the corner where Republic is located. You have Dudleys where you can find a drag show, The Music Farm which may have a long line per who is in town performing, and a neat little alley to the right of eateries like Bodega. I would check The Music Farm for events while in Charleston.
             </p>
+
+            <!-- Ann Street Side Quest -->
+            <div class="venue-card mt-4">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-turn-up"></i> Side Street Detour: Ann Street</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>Dudleys:</strong> Known for their legendary drag shows and themed party nights. Check their schedule in advance - shows often sell out.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>The Music Farm:</strong> Live concert venue hosting local and touring acts. If your favorite artist is in town, this is worth the detour. Purchase tickets in advance.</p>
+                <p class="text-gray-600 text-sm"><strong>Bodega:</strong> Tucked-away taco spot perfect for late-night munchies. Cash-friendly prices and delicious street-style tacos.</p>
+            </div>
+
+            <div class="pro-tip mt-4">
+                <p class="text-gray-800 mb-2"><i class="fa-solid fa-shoe-prints text-yellow-600"></i> <strong>Walking Break Tip:</strong></p>
+                <p class="text-gray-700 text-sm">Ann Street is the perfect midpoint for a bathroom break, food stop, or to split the group if some want live music and others want to keep dancing. Regroup at the next stop!</p>
+            </div>
         </div>
 
         <div class="content-section p-6 my-12">
-            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Yoga Maybe </h2>
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Yoga Maybe</h2>
             <p class="text-gray-600 mb-4">
-                A lot of businesses are part of bar crawls, off the beaten path you can try <a href="https://www.yoga-twisted.com/">Charleston twisted yoga</a>.
+                A lot of businesses are part of bar crawls, off the beaten path you can try <a href="https://www.yoga-twisted.com/" class="text-pink-600 hover:text-pink-800 underline">Charleston twisted yoga</a>.
             </p>
-    
+            <div class="p-4 bg-purple-50 rounded-lg border-l-4 border-purple-400 mt-4">
+                <p class="text-gray-700 text-sm"><i class="fa-solid fa-spa text-purple-600"></i> <strong>Day-After Recovery:</strong> Book a yoga or wellness session for Sunday morning to recover from your Saturday night adventures. Many bachelorette groups love pairing wild nights with calming mornings.</p>
+            </div>
         </div>
         
         <div class="content-section p-6 my-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Final Stops on the Route</h2>
             <p class="text-gray-600 mb-4">
                 Let's get back on King Street. From that corner, there is not much except for eateries and some walking. Just keep walking and pass Hotel Bennett and then a big field called Marion Square. This is the last place I will mention on the pub crawl because all else is out of the walking range anyone would want.
             </p>
-            <p class="text-gray-600">
+            <p class="text-gray-600 mb-4">
                 The places I am mentioning are across the street and located on Calhoun Street, so you cross King Street and make a right at the Walgreens. The first place is Ritual Rooftop bar, if you are still in the mood buy a drink and feel it out. The last stop I will mention is Frontier Lounge, and I would do the same. They are 2 little adds within the walk that are worth mentioning.
             </p>
+
+            <!-- Ritual Rooftop -->
+            <div class="venue-card">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-building"></i> Stop 4 (Optional): Ritual Rooftop Bar</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>What to Expect:</strong> Elevated rooftop experience with city views. More upscale and relaxed atmosphere.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Drinks:</strong> Craft cocktails and wine selection. Pricier than earlier stops but quality atmosphere.</p>
+                <p class="text-gray-600 text-sm"><strong>Vibe:</strong> Wind-down energy. Perfect if you want to end the night with conversation and views rather than loud music.</p>
+            </div>
+
+            <!-- Frontier Lounge -->
+            <div class="venue-card mt-3">
+                <h4 class="text-lg font-bold text-pink-700 mb-2"><i class="fa-solid fa-mug-hot"></i> Stop 5 (Optional): Frontier Lounge</h4>
+                <p class="text-gray-600 text-sm mb-2"><strong>What to Expect:</strong> Dive bar charm with a neighborhood feel. Less touristy, more local.</p>
+                <p class="text-gray-600 text-sm mb-2"><strong>Drinks:</strong> Standard bar fare, reasonable prices, strong pours.</p>
+                <p class="text-gray-600 text-sm"><strong>Vibe:</strong> Laid-back and casual. Great for ending the night if your group is still standing but wants a chill environment.</p>
+            </div>
+
+            <div class="pro-tip mt-4">
+                <p class="text-gray-800 mb-2"><i class="fa-solid fa-taxi text-yellow-600"></i> <strong>Getting Home:</strong></p>
+                <p class="text-gray-700 text-sm">By the time you reach Ritual and Frontier, you're at the northern end of King Street. Pre-arrange ride-shares or have a designated meeting spot. Wait times for Uber/Lyft can be 15-20 minutes after 1 AM on weekends.</p>
+            </div>
         </div>
 
         <!-- Self Guided Pub Crawl Charleston SC -->
@@ -178,9 +266,22 @@
             <p class="text-gray-600 mb-4">
                 This nightclub hopping I have written about is an observation from someone who doesn't gain or lose from the mentions. This is not a planned-out path of people I have business partnerships with or met before in life. You can pull up a Google Maps and I have walked you down King Street of happening places on the path. This list can fill up all of your time.
             </p>
-            <p class="text-gray-600">
+            <p class="text-gray-600 mb-4">
                 I did not mention places to eat that are open or what food these places sell but places to get boozed up and happy while in Charleston SC. If drinking, big crowds, and social is your thing then here is a self-guided bar crawl free of charge. Below I will list some entertainment ideas as well of things to do back at the rental or entertainment places to go.
             </p>
+
+            <!-- Quick Tips Section -->
+            <div class="mt-6 p-4 bg-pink-50 rounded-lg border-2 border-pink-200">
+                <h4 class="text-lg font-bold text-pink-800 mb-3"><i class="fa-solid fa-list-check"></i> Quick Crawl Tips</h4>
+                <ul class="text-gray-700 text-sm space-y-2">
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Wear comfortable shoes - you'll be walking and dancing for hours</li>
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Bring a portable phone charger - you'll be taking lots of photos</li>
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Have a group chat and designate a "herder" to keep everyone together</li>
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Bring cash for tips and any venues that don't take cards</li>
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Set a meeting spot in case anyone gets separated (Hotel Bennett is a good landmark)</li>
+                    <li><i class="fa-solid fa-check text-pink-600"></i> Eat a solid dinner before you start - bar food is expensive and lines are long</li>
+                </ul>
+            </div>
         </div>
 
         <!-- Charleston Pub Crawl Nightlife -->
@@ -193,10 +294,56 @@
             <p class="text-gray-600 mb-4">
                 There are so many replacements with an agenda for the original now geared for you, so go see the real thing. They do this because they don't want to be called strippers but are being burlesque, drag shows, pole dancing, servers, butlers, or art stuff whether male or female. Just get or go see the real thing.
             </p>
-            <h3 class="text-xl font-semibold text-pink-700 mb-2">Michael At Your Place - <a href="https://michaelatyourplace.com">Charleston Male Stripper</a></h3>
-            <p class="text-gray-600">
+            <div class="p-3 bg-gray-50 rounded border-l-4 border-gray-400 mb-4">
+                <p class="text-gray-600 text-sm"><strong>Location:</strong> Located off Meeting Street, about a 10-minute drive from King Street. Uber is recommended.</p>
+                <p class="text-gray-600 text-sm mt-2"><strong>What to Know:</strong> Full bar, ATM on-site, and table service available. Call ahead for large groups or bottle service.</p>
+            </div>
+
+            <h3 class="text-xl font-semibold text-pink-700 mb-2 mt-6">Michael At Your Place - <a href="https://michaelatyourplace.com" class="text-pink-600 hover:text-pink-800 underline">Charleston Male Stripper</a></h3>
+            <p class="text-gray-600 mb-4">
                 Independent dancer that you book direct and not through an agent or another business so the price is cheaper, tame to wild parties per your taste, and a REAL show that is full of choreographed stuff at your private location.
             </p>
+            <div class="p-3 bg-gray-50 rounded border-l-4 border-gray-400">
+                <p class="text-gray-600 text-sm"><strong>Why Book Direct:</strong> No agency markup means better rates and direct communication about your preferences and comfort level.</p>
+                <p class="text-gray-600 text-sm mt-2"><strong>Perfect For:</strong> Private house parties, Airbnb rentals, or hotel suites. Can customize the show to match your group's energy.</p>
+                <p class="text-gray-600 text-sm mt-2"><strong>Booking Tip:</strong> Book at least 2-3 weeks in advance, especially for weekend bachelorette parties during peak season (April-October).</p>
+            </div>
+
+            <div class="pro-tip mt-6">
+                <p class="text-gray-800 mb-2"><i class="fa-solid fa-calendar-days text-yellow-600"></i> <strong>Plan Your Itinerary Wisely:</strong></p>
+                <p class="text-gray-700 text-sm">If booking entertainment at your rental, schedule it before the pub crawl (7-8 PM) or for a different night. Trying to coordinate everyone back to a rental at midnight rarely works out!</p>
+            </div>
+        </div>
+
+        <!-- Bonus Section: What to Know -->
+        <div class="content-section p-6 my-12">
+            <h2 class="text-3xl font-bold text-gray-800 mb-4 text-center">Before You Go: Important Details</h2>
+            
+            <div class="grid md:grid-cols-2 gap-4 mt-6">
+                <div class="p-4 bg-blue-50 rounded-lg">
+                    <h4 class="font-bold text-blue-800 mb-2"><i class="fa-solid fa-id-card"></i> ID & Dress Code</h4>
+                    <p class="text-gray-700 text-sm">Everyone needs a valid ID, no exceptions. Most clubs enforce dress codes: no athletic wear, torn clothing, or flip-flops. Heels or nice shoes recommended.</p>
+                </div>
+                
+                <div class="p-4 bg-green-50 rounded-lg">
+                    <h4 class="font-bold text-green-800 mb-2"><i class="fa-solid fa-dollar-sign"></i> Budget Planning</h4>
+                    <p class="text-gray-700 text-sm">Expect $10-15 per drink, $5-10 cover charges, and $50-100 total per person for the night including tips and late-night food.</p>
+                </div>
+                
+                <div class="p-4 bg-purple-50 rounded-lg">
+                    <h4 class="font-bold text-purple-800 mb-2"><i class="fa-solid fa-calendar-check"></i> Best Nights</h4>
+                    <p class="text-gray-700 text-sm">Friday and Saturday are peak nights with longest hours and best energy. Thursday is "college night" at some venues. Avoid Sunday-Wednesday for nightlife.</p>
+                </div>
+                
+                <div class="p-4 bg-orange-50 rounded-lg">
+                    <h4 class="font-bold text-orange-800 mb-2"><i class="fa-solid fa-shield-halved"></i> Safety First</h4>
+                    <p class="text-gray-700 text-sm">Travel in groups, use the buddy system, watch your drinks, and have a plan for getting home. Charleston is safe but stay aware of your surroundings.</p>
+                </div>
+            </div>
+
+            <div class="mt-6 p-4 bg-pink-100 rounded-lg border-2 border-pink-300">
+                <p class="text-gray-800 text-center"><i class="fa-solid fa-heart text-pink-600"></i> <strong>Most Important:</strong> Have fun, make memories, and celebrate the bride! Charleston nightlife is unforgettable when you embrace the energy and go with the flow.</p>
+            </div>
         </div>
 
     </div>
@@ -210,6 +357,6 @@
     </footer>
 
     <!-- Bootstrap JS for modal functionality -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" xintegrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZleCps/Kk7b0f/c8y/555eGfK8Fk0GzE7Ff" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </body>
 </html>
