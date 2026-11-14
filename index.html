@@ -3,14 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Charleston Bachelorette Party| Game Rooms, Comedy, Party Bars, Tours, Painting and More Suggestions For Your Charleston Bachelorette Party </title>
-  <meta name="description" content="Plan bachelorette experiences with this blog. Pick a activity and click on the experience." />
+  <title>Charleston Bachelorette Party | Game Rooms, Comedy, Party Bars, Tours, Painting and More Suggestions For Your Charleston Bachelorette Party</title>
+  <meta name="description" content="Plan bachelorette experiences with this blog. Pick an activity and click on the experience." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://bachelorettepartay.com/charleston/" />
 
   <!-- Open Graph -->
   <meta property="og:title" content="Charleston Experience For Bachelorettes" />
-  <meta property="og:description" content="Plan bachelorette experiences with this blog. Pick a activity and click on the experience." />
+  <meta property="og:description" content="Plan bachelorette experiences with this blog. Pick an activity and click on the experience." />
   <meta property="og:type" content="article" />
   <meta property="og:locale" content="en_US" />
 
@@ -37,6 +37,36 @@
     }
 
     img { max-width: 100%; height: auto; }
+
+    /* ---- NAVIGATION ---- */
+    .navbar {
+      background-color: var(--brand-dark);
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      color: white !important;
+    }
+    .navbar-nav .nav-link {
+      color: rgba(255,255,255,0.85) !important;
+      font-weight: 400;
+      transition: color 0.2s;
+    }
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+      color: var(--brand-primary) !important;
+    }
+    .dropdown-menu {
+      background-color: var(--brand-dark);
+      border: 1px solid rgba(255,255,255,0.1);
+    }
+    .dropdown-item {
+      color: rgba(255,255,255,0.85);
+    }
+    .dropdown-item:hover {
+      background-color: rgba(255,71,126,0.15);
+      color: white;
+    }
 
     /* ---- HERO ---- */
     .hero-section {
@@ -164,43 +194,6 @@
       border-radius: 8px;
     }
 
-    /* ---- PLANNING GUIDE (text-only editorial section) ---- */
-    .guide-section {
-      background: #fff;
-    }
-    .guide-body {
-      font-size: 1.02rem;
-      line-height: 1.75;
-      color: #333;
-    }
-    .guide-body h2 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
-      margin-bottom: .75rem;
-    }
-    .guide-body h3 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 700;
-      font-size: 1.35rem;
-      color: var(--brand-accent);
-      margin-top: 2.25rem;
-      margin-bottom: .6rem;
-    }
-    .guide-body p { margin-bottom: 1rem; }
-    .guide-body ul { padding-left: 1.2rem; margin-bottom: 1rem; }
-    .guide-body li { margin-bottom: .4rem; }
-    .guide-body strong { font-weight: 500; color: #111; }
-    .guide-body a { color: var(--brand-accent); }
-    .biz-list { list-style: none; padding-left: 0; }
-    .biz-list li {
-      padding: .55rem 0;
-      border-bottom: 1px solid #f0f0f0;
-      margin-bottom: 0;
-    }
-    .biz-list li a { font-weight: 500; text-decoration: none; }
-    .biz-list li a:hover { text-decoration: underline; }
-
     /* ---- FOOTER ---- */
     .site-footer {
       background: var(--brand-dark);
@@ -223,6 +216,50 @@
 </head>
 <body>
 
+  <!-- Main Navigation Menu -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">Bachelorette Partay</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Guides &amp; Blog
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="/blog/where-to-stay-downtown-charleston.html">Where to Stay Downtown</a></li>
+              <li><a class="dropdown-item" href="/blog/free-parking-downtown-charleston.html">Free Parking Downtown</a></li>
+              <li><a class="dropdown-item" href="/charleston-pub-crawls-self-guided.html">Self-Guided Pub Crawls</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="middayDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Midday Activities
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="middayDropdown">
+              <li><a class="dropdown-item" href="/bach/mid-day-bach-activity.html">Midday Overview</a></li>
+              <li><a class="dropdown-item" href="/bach/folly-beach-bachelorette-midday.html">Folly Beach Midday</a></li>
+              <li><a class="dropdown-item" href="/bach/iop-bachelorette-midday.html">Isle of Palms Midday</a></li>
+              <li><a class="dropdown-item" href="/bach/mount-pleasant-sc-bachelorette-midday.html">Mount Pleasant Midday</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/male-entertainer/">Private Entertainment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <!-- Breadcrumb -->
   <nav class="breadcrumb-bar" aria-label="breadcrumb">
     <div class="container">
@@ -231,13 +268,9 @@
           <a href="/" itemprop="item"><span itemprop="name">Home</span></a>
           <meta itemprop="position" content="1">
         </li>
-        <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-          <a href="/charleston/" itemprop="item"><span itemprop="name">Charleston SC</span></a>
-          <meta itemprop="position" content="2">
-        </li>
         <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
           <span itemprop="name">Bach Party Planner</span>
-          <meta itemprop="position" content="3">
+          <meta itemprop="position" content="2">
         </li>
       </ol>
     </div>
@@ -382,7 +415,7 @@
       </div>
     </section>
 
-      <!-- PRIVATE ENTERTAINMENT FEATURE -->
+    <!-- PRIVATE ENTERTAINMENT FEATURE -->
     <section class="feature-section py-5" id="private-entertainment" aria-labelledby="private-heading">
       <div class="container">
         <div class="row justify-content-center">
@@ -405,8 +438,6 @@
       </div>
     </section>
 
-    
-    
   </main>
 
   <!-- Footer -->
