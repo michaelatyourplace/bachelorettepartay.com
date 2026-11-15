@@ -4,12 +4,23 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Charleston Bachelorette Party Things To Do</title>
-<meta name="description" content="Plan your Charleston bachelorette party with local activities, nightlife, restaurants, private entertainment, lodging and parking guides.">
+
+<title>Charleston Bachelorette Party Ideas & Activities | Things to Do</title>
+
+<meta name="description" content="Discover Charleston bachelorette party ideas and activities, including boat tours, King Street nightlife, comedy, spas, beach days and weekend planning tips.">
+
 <meta name="robots" content="index, follow">
+
 <link rel="canonical" href="https://bachelorettepartay.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Charleston Bachelorette Party Ideas & Activities">
+<meta property="og:description" content="Fun things to do for a Charleston bachelorette weekend, from boat tours and nightlife to creative group activities.">
+<meta property="og:url" content="https://bachelorettepartay.com/">
+
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
 
 <style>
@@ -20,346 +31,894 @@
   --brand-soft:#fff0f3;
   --brand-gold:#e9c46a;
 }
+
+html, body {
+  overflow-x:hidden;
+}
+
 body {
   font-family:'DM Sans',sans-serif;
   color:#292929;
+  font-weight:400;
 }
+
 h1,h2,h3 {
   font-family:'Playfair Display',serif;
 }
+
 a {
   color:var(--brand-accent);
 }
+
+a:hover {
+  color:#a5103b;
+}
+
+.navbar {
+  background:var(--brand-dark);
+}
+
+.navbar-brand {
+  font-weight:600;
+}
+
 .hero {
-  background:linear-gradient(rgba(0,0,0,.67),rgba(0,0,0,.67)),
-  url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1400') center/cover;
+  background:
+    linear-gradient(rgba(0,0,0,.67),rgba(0,0,0,.67)),
+    url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1400')
+    center/cover no-repeat;
   color:white;
   padding:115px 0;
 }
+
 .hero h1 {
-  font-weight:900;
   font-size:clamp(2.2rem,6vw,4rem);
+  font-weight:900;
+  line-height:1.2;
 }
+
 .hero p {
-  max-width:660px;
-  margin:auto;
+  max-width:680px;
+  margin-left:auto;
+  margin-right:auto;
 }
+
+.hero-label {
+  display:inline-block;
+  background:rgba(255,255,255,.15);
+  border:1px solid rgba(255,255,255,.25);
+  padding:7px 16px;
+  border-radius:25px;
+  margin-bottom:20px;
+  font-size:.85rem;
+}
+
 .section-title {
+  font-size:clamp(1.7rem,3.5vw,2.4rem);
   font-weight:700;
   text-align:center;
-  margin-bottom:35px;
+  margin-bottom:15px;
 }
+
+.title-rule {
+  width:50px;
+  height:3px;
+  background:var(--brand-primary);
+  margin:12px auto 32px;
+}
+
+.intro-text {
+  max-width:900px;
+  margin:0 auto 38px;
+  font-size:1.04rem;
+  line-height:1.8;
+  color:#444;
+}
+
+.intro-text p {
+  margin-bottom:1rem;
+}
+
 .activity-card {
-  border:1px solid #eee;
+  border:1px solid #e9ecef;
   border-radius:12px;
   overflow:hidden;
   box-shadow:0 3px 12px rgba(0,0,0,.07);
-  transition:.2s;
+  transition:transform .2s,box-shadow .2s;
 }
+
 .activity-card:hover {
   transform:translateY(-3px);
+  box-shadow:0 8px 24px rgba(0,0,0,.1);
 }
+
 .activity-card img {
   width:100%;
   height:205px;
   object-fit:cover;
+  background:var(--brand-soft);
 }
+
 .activity-card h3 {
   color:var(--brand-accent);
   font-size:1.25rem;
+  font-weight:700;
 }
+
 .activity-card p {
   font-size:.95rem;
+  line-height:1.65;
   color:#555;
 }
+
 .btn-brand {
   background:var(--brand-primary);
   border:1px solid var(--brand-primary);
-  color:#fff;
+  color:white;
   font-weight:600;
 }
+
 .btn-brand:hover {
   background:var(--brand-accent);
-  color:#fff;
+  border-color:var(--brand-accent);
+  color:white;
 }
+
 .guide-section {
   background:var(--brand-soft);
 }
+
+.guide-card {
+  background:white;
+  border:1px solid #f0e4e8;
+  border-radius:12px;
+  box-shadow:0 3px 12px rgba(0,0,0,.05);
+  height:100%;
+}
+
+.guide-card h3 {
+  font-size:1.3rem;
+  color:var(--brand-accent);
+}
+
+.guide-card p {
+  font-size:.95rem;
+  color:#555;
+  line-height:1.65;
+}
+
 .feature-section {
   background:var(--brand-dark);
   color:white;
 }
+
 .feature-box {
   border:1px solid rgba(255,255,255,.2);
   border-radius:12px;
   padding:25px;
 }
+
 .feature-box img {
   max-width:100%;
+  height:auto;
   border-radius:8px;
 }
+
+.feature-box p {
+  color:#e8e8ee;
+  line-height:1.75;
+}
+
 footer {
   background:var(--brand-dark);
   color:#ddd;
 }
+
 footer a {
   color:var(--brand-gold);
 }
+
+@media(max-width:576px) {
+  .hero {
+    padding:75px 0;
+  }
+
+  .activity-card img {
+    height:190px;
+  }
+
+  .feature-box {
+    padding:18px;
+  }
+}
 </style>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"Charleston Bachelorette Party Ideas & Activities",
+  "description":"Charleston bachelorette party ideas, activities, nightlife and weekend planning guides.",
+  "url":"https://bachelorettepartay.com/",
+  "isPartOf":{
+    "@type":"WebSite",
+    "name":"Bachelorette Partay",
+    "url":"https://bachelorettepartay.com/"
+  }
+}
+</script>
+
 </head>
 
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark" style="background:#1a1a2e;">
+<!-- NAVIGATION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
   <div class="container">
+
     <a class="navbar-brand fw-bold" href="index.html">
       Bachelorette Partay
     </a>
-    <button class="navbar-toggler" type="button"
-      data-bs-toggle="collapse" data-bs-target="#mainNav"
-      aria-controls="mainNav" aria-expanded="false"
+
+    <button class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#mainNav"
+      aria-controls="mainNav"
+      aria-expanded="false"
       aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+
     <div class="collapse navbar-collapse" id="mainNav">
+
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="charleston/where-to-stay.html">Where to Stay</a></li>
-        <li class="nav-item"><a class="nav-link" href="charleston/free-parking-downtown-charleston.html">Free Parking</a></li>
-        <li class="nav-item"><a class="nav-link" href="charleston-pub-crawls-self-guided.html">Pub Crawls</a></li>
-        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html" aria-current="page">
+            Home
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="charleston/where-to-stay.html">
+            Where to Stay
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="charleston/free-parking-downtown-charleston.html">
+            Free Parking
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="charleston-pub-crawls-self-guided.html">
+            Pub Crawls
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">
+            About
+          </a>
+        </li>
+
       </ul>
+
     </div>
   </div>
 </nav>
 
+<!-- HERO -->
+
 <header class="hero text-center">
+
   <div class="container">
-    <p class="mb-3">Charleston, South Carolina</p>
-    <h1>Things To Do In Charleston Bachelorette Party</h1>
+
+    <span class="hero-label">
+      Charleston, South Carolina
+    </span>
+
+    <h1>
+      Charleston Bachelorette Party Ideas &amp; Activities
+    </h1>
+
     <p class="lead mt-3">
-      Charleston bachelorette things to do
-      experiences and helpful visitor guides.
+      Fun things to do for a Charleston bachelorette weekend,
+      from boat tours and nightlife to creative group activities.
     </p>
+
   </div>
+
 </header>
 
 <main>
 
-<section class="py-5">
+<!-- ACTIVITIES AND SEO INTRO -->
+
+<section class="py-5" id="activities">
+
   <div class="container">
-    <h2 class="section-title">Charleston Bachelorette Party To-Dos</h2>
+
+    <h2 class="section-title">
+      Things to Do for a Charleston Bachelorette Party
+    </h2>
+
+    <div class="title-rule"></div>
+
+    <div class="intro-text">
+
+      <p>
+        Looking for <strong>Charleston bachelorette party ideas</strong>
+        that go beyond dinner and drinks? Plan a
+        <strong>Charleston bach party</strong> with a harbor boat tour,
+        a funny improv show at Theatre 99, a group paint session
+        or a relaxing spa visit. These
+        <strong>Charleston bachelorette activities</strong>
+        work for different group sizes and help you mix daytime
+        experiences with a fun night out.
+      </p>
+
+      <p>
+        For an easy <strong>Charleston bachelorette party itinerary</strong>,
+        start with a food tour or Folly Beach day trip,
+        enjoy rooftop cocktails around King Street, then head
+        to dinner and dancing. Whether you're planning a full
+        weekend or one afternoon, the
+        <strong>Charleston bachelorette party activities</strong>
+        below give you flexible options. Check each business
+        for availability and group bookings before finalizing
+        your plans.
+      </p>
+
+    </div>
+
+    <!-- ACTIVITY CARDS -->
 
     <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
+      <!-- GAME SHOW -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/gameshow.png" alt="Charleston Game Show Battle Rooms" loading="lazy">
+
+          <img
+            src="bach/images/gameshow.png"
+            alt="Charleston Game Show Battle Rooms"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>The Game Show Battle Rooms</h3>
-            <p>Compete against your friends in hilarious game-show challenges on King Street.</p>
-            <a href="https://charlestongameshow.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Compete against your friends in hilarious
+              game-show challenges on King Street.
+            </p>
+
+            <a href="https://charlestongameshow.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- COMEDY -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/theater99.png" alt="Theatre 99 Charleston" loading="lazy">
+
+          <img
+            src="bach/images/theater99.png"
+            alt="Theatre 99 Charleston"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Theatre 99 Comedy</h3>
-            <p>Enjoy a local improv comedy show in downtown Charleston.</p>
-            <a href="https://theatre99.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Enjoy a local improv comedy show in downtown Charleston.
+            </p>
+
+            <a href="https://theatre99.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- REPUBLIC -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/republic.png" alt="Republic Garden and Lounge" loading="lazy">
+
+          <img
+            src="bach/images/republic.png"
+            alt="Republic Garden and Lounge"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
-            <h3>Republic Garden & Lounge</h3>
-            <p>King Street nightlife, music, cocktails and dancing.</p>
-            <a href="https://republicreign.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <h3>Republic Garden &amp; Lounge</h3>
+
+            <p>
+              King Street nightlife, music,
+              cocktails and dancing.
+            </p>
+
+            <a href="https://republicreign.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- UPTOWN SOCIAL -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/uptownsocial.png" alt="Uptown Social Charleston" loading="lazy">
+
+          <img
+            src="bach/images/uptownsocial.png"
+            alt="Uptown Social Charleston"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Uptown Social</h3>
-            <p>A lively King Street bar with rooftop space and cocktails.</p>
-            <a href="https://www.uptownsocialchs.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              A lively King Street bar with rooftop
+              space and cocktails.
+            </p>
+
+            <a href="https://www.uptownsocialchs.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- PAINT PARTY -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/artpaint.png" alt="Charleston painting activity" loading="lazy">
+
+          <img
+            src="bach/images/artpaint.png"
+            alt="Charleston painting activity"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Paint Party</h3>
-            <p>A creative group activity for a relaxed bachelorette afternoon.</p>
-            <a href="https://www.instagram.com/artistmandy843/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              A creative group activity for a relaxed
+              bachelorette afternoon.
+            </p>
+
+            <a href="https://www.instagram.com/artistmandy843/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- BOAT TOURS -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/boattours.png" alt="Charleston boat tours" loading="lazy">
+
+          <img
+            src="bach/images/boattours.png"
+            alt="Charleston boat tours"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Charleston Boat Tours</h3>
-            <p>Enjoy the harbor with private cruises and group boat experiences.</p>
-            <a href="https://www.sipandseacharleston.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Enjoy the harbor with private cruises
+              and group boat experiences.
+            </p>
+
+            <a href="https://www.sipandseacharleston.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- SPA -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/spa.png" alt="Charleston spa" loading="lazy">
+
+          <img
+            src="bach/images/spa.png"
+            alt="Charleston spa"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Earthling Day Spa</h3>
-            <p>Relax before the party with massages, facials and pampering.</p>
-            <a href="https://www.earthlingdayspa.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Relax before the party with massages,
+              facials and pampering.
+            </p>
+
+            <a href="https://www.earthlingdayspa.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- FOLLY BEACH -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/folly-beach.png" alt="Folly Beach" loading="lazy">
+
+          <img
+            src="bach/images/folly-beach.png"
+            alt="Folly Beach"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Folly Beach Day Trip</h3>
-            <p>Enjoy a beach day with ocean views, beach bars and local restaurants.</p>
-            <a href="https://visitfolly.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Enjoy a beach day with ocean views,
+              beach bars and local restaurants.
+            </p>
+
+            <a href="https://visitfolly.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- FOOD TOURS -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/foodtours.png" alt="Charleston food tour" loading="lazy">
+
+          <img
+            src="bach/images/foodtours.png"
+            alt="Charleston food tour"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Charleston Food Tours</h3>
-            <p>Explore Charleston restaurants and local cuisine with guided tours.</p>
-            <a href="https://www.bulldogtours.com/tours/food" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Explore Charleston restaurants and local
+              cuisine with guided tours.
+            </p>
+
+            <a href="https://www.bulldogtours.com/tours/food"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
+      <!-- ROOFTOP -->
+
       <div class="col">
         <article class="card activity-card h-100">
-          <img src="bach/images/rooftop.png" alt="Charleston rooftop bars" loading="lazy">
+
+          <img
+            src="bach/images/rooftop.png"
+            alt="Charleston rooftop bars"
+            loading="lazy">
+
           <div class="card-body d-flex flex-column">
+
             <h3>Charleston Rooftop Bars</h3>
-            <p>Take in downtown views while enjoying cocktails with your group.</p>
-            <a href="https://www.thevendue.com/" class="btn btn-brand mt-auto align-self-start" target="_blank" rel="noopener noreferrer">Visit Website</a>
+
+            <p>
+              Take in downtown views while enjoying
+              cocktails with your group.
+            </p>
+
+            <a href="https://www.thevendue.com/"
+              class="btn btn-brand mt-auto align-self-start"
+              target="_blank" rel="noopener noreferrer">
+              Visit Website
+            </a>
+
           </div>
         </article>
       </div>
 
     </div>
+
   </div>
+
 </section>
 
-<section class="feature-section py-5">
+<!-- PRIVATE ENTERTAINMENT -->
+
+<section class="feature-section py-5" id="private-entertainment">
+
   <div class="container">
+
     <div class="row justify-content-center">
+
       <div class="col-lg-8">
+
         <div class="feature-box">
-          <h2 class="h3 text-white">Private Bachelorette Entertainment in Charleston</h2>
-          <img src="images/partay2.png" class="my-3" alt="Michael At Your Place Charleston bachelorette entertainment" loading="lazy">
+
+          <h2 class="h3 text-white">
+            Private Bachelorette Entertainment in Charleston
+          </h2>
+
+          <img
+            src="images/partay2.png"
+            class="my-3"
+            alt="Michael At Your Place Charleston bachelorette entertainment"
+            loading="lazy">
+
           <p>
-            <a href="https://michaelatyourplace.com/" class="text-warning">Michael At Your Place</a>
-            offers private male entertainment for Charleston bachelorette parties,
-            with shows brought directly to vacation rentals and other suitable private venues.
+            <a href="https://michaelatyourplace.com/"
+              class="text-warning">
+              Michael At Your Place
+            </a>
+            offers private male entertainment for Charleston
+            bachelorette parties, with shows brought directly
+            to vacation rentals and other suitable private venues.
           </p>
-          <a href="https://michaelatyourplace.com/" class="btn btn-brand">
+
+          <a href="https://michaelatyourplace.com/"
+            class="btn btn-brand">
             Learn More
           </a>
+
         </div>
+
       </div>
+
     </div>
+
   </div>
+
 </section>
 
-<section class="guide-section py-5">
+<!-- VISITOR GUIDES -->
+
+<section class="guide-section py-5" id="visitor-guides">
+
   <div class="container">
-    <h2 class="section-title">Charleston Visitor Guides</h2>
+
+    <h2 class="section-title">
+      Charleston Bachelorette Planning &amp; Visitor Guides
+    </h2>
+
+    <div class="title-rule"></div>
+
+    <p class="text-center mx-auto mb-4"
+       style="max-width:750px;">
+      Planning a Charleston bachelorette weekend?
+      Explore guides covering accommodations, restaurants,
+      party themes, parking and downtown nightlife.
+    </p>
+
     <div class="row g-4">
 
-      <div class="col-md-6">
-        <article class="card activity-card h-100">
-          <div class="card-body p-4 d-flex flex-column">
-            <h3>Where to Stay in Downtown Charleston</h3>
-            <p>
-              Learn which neighborhoods are best for a bachelorette group,
-              plus Airbnb rentals and downtown hotel options.
-            </p>
-            <a href="charleston/where-to-stay.html"
-               class="btn btn-brand mt-auto align-self-start">
-              Read the Guide
-            </a>
-          </div>
-        </article>
-      </div>
+      <!-- WHERE TO STAY -->
 
       <div class="col-md-6">
-        <article class="card activity-card h-100">
+
+        <article class="card guide-card">
+
           <div class="card-body p-4 d-flex flex-column">
+
+            <h3>Where to Stay in Downtown Charleston</h3>
+
+            <p>
+              Learn which neighborhoods are best for a
+              bachelorette group, plus Airbnb rentals
+              and downtown hotel options.
+            </p>
+
+            <a href="charleston/where-to-stay.html"
+              class="btn btn-brand mt-auto align-self-start">
+              Read the Guide
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- FREE PARKING -->
+
+      <div class="col-md-6">
+
+        <article class="card guide-card">
+
+          <div class="card-body p-4 d-flex flex-column">
+
             <h3>Free Parking in Downtown Charleston</h3>
+
             <p>
               Find out when downtown street parking is free,
-              where city lots are located and what restrictions apply.
+              where city lots are located and what
+              restrictions apply.
             </p>
+
             <a href="charleston/free-parking-downtown-charleston.html"
-               class="btn btn-brand mt-auto align-self-start">
+              class="btn btn-brand mt-auto align-self-start">
               Read the Guide
             </a>
+
           </div>
+
         </article>
+
       </div>
 
+      <!-- PUB CRAWLS -->
+
       <div class="col-md-6">
-        <article class="card activity-card h-100">
+
+        <article class="card guide-card">
+
           <div class="card-body p-4 d-flex flex-column">
+
             <h3>Self-Guided Charleston Pub Crawls</h3>
+
             <p>
-              Plan a fun evening exploring downtown Charleston bars.
+              Plan a fun evening exploring downtown
+              Charleston bars.
             </p>
+
             <a href="charleston-pub-crawls-self-guided.html"
-               class="btn btn-brand mt-auto align-self-start">
+              class="btn btn-brand mt-auto align-self-start">
               Read the Guide
             </a>
+
           </div>
+
         </article>
+
+      </div>
+
+      <!-- DINNER RESTAURANTS -->
+
+      <div class="col-md-6">
+
+        <article class="card guide-card">
+
+          <div class="card-body p-4 d-flex flex-column">
+
+            <h3>Best Bachelorette Party Dinner Restaurants</h3>
+
+            <p>
+              Discover Charleston bachelorette dinner spots,
+              including Vern's, Chubby Fish, Indaco,
+              Sorelle and other downtown restaurants.
+            </p>
+
+            <a href="charleston/best-bachelorette-party-dinner-charleston.html"
+              class="btn btn-brand mt-auto align-self-start">
+              Read the Guide
+            </a>
+
+          </div>
+
+        </article>
+
+      </div>
+
+      <!-- BACHELORETTE THEMES -->
+
+      <div class="col-md-6">
+
+        <article class="card guide-card">
+
+          <div class="card-body p-4 d-flex flex-column">
+
+            <h3>Charleston Bachelorette Party Themes</h3>
+
+            <p>
+              Find inspiration for coastal cowgirl,
+              disco cowgirl, beach bride, nautical
+              celebrations and more Charleston party themes.
+            </p>
+
+            <a href="charleston/charleston-bachelorette-party-themes.html"
+              class="btn btn-brand mt-auto align-self-start">
+              Read the Guide
+            </a>
+
+          </div>
+
+        </article>
+
       </div>
 
     </div>
+
   </div>
+
 </section>
 
 </main>
 
+<!-- FOOTER -->
+
 <footer class="py-4 text-center">
+
   <div class="container">
-    <p class="mb-2">BachelorettePartay.com</p>
+
     <p class="mb-2">
-      <a href="index.html">Home</a> ·
-      <a href="about.html">About</a> ·
-      <a href="privacy-policy.html">Privacy Policy</a>
+      BachelorettePartay.com
     </p>
-    <small>© <span id="year"></span> BachelorettePartay.com</small>
+
+    <p class="mb-2">
+
+      <a href="index.html">Home</a> ·
+
+      <a href="about.html">About</a> ·
+
+      <a href="privacy-policy.html">Privacy Policy</a>
+
+    </p>
+
+    <small>
+      © <span id="year"></span>
+      BachelorettePartay.com. All rights reserved.
+    </small>
+
   </div>
+
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 <script>
-document.getElementById('year').textContent = new Date().getFullYear();
+document.getElementById('year').textContent =
+  new Date().getFullYear();
 </script>
+
 </body>
 </html>
